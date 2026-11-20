@@ -1,148 +1,309 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Abiola Olunrebi | Social Media & Content, Lagos</title>
-  <meta name="theme-color" content="#eba8da">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,700;1,9..144,560&family=Outfit:wght@400;600;700&display=swap">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/css/site.css">
-  <script>try{document.documentElement.dataset.theme=localStorage.getItem("oe-theme")||"main"}catch(e){}</script>
-</head>
-<body data-page="home">
-  <div class="paper" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Abiola Olunrebi | Social Media & Content, Lagos</title>
+    <meta name="theme-color" content="#eba8da" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,700;1,9..144,560&family=Outfit:wght@400;600;700&display=swap"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("oe-theme") || "main";
+      } catch (e) {}
+    </script>
+  </head>
+  <body data-page="home">
+    <div class="paper" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
 
-  <div class="loader" aria-hidden="true">
-    <div class="loader__bg crumple"></div>
-    <svg class="loader__trail" viewBox="0 0 1440 900" preserveAspectRatio="none"><path d="M-40 520 C 180 180, 420 760, 680 340 S 1100 140, 1500 480"/></svg>
-    <svg class="loader__plane" viewBox="0 0 60 40"><path d="M2 21 L58 3 L33 37 L27 25 Z"/><path d="M27 25 L58 3 M27 25 L22 33 L33 37"/></svg>
-    <button class="loader__skip" type="button">Skip</button>
-    <div class="loader__frame">
-      <div class="reel reel--a"></div>
-      <div class="reel reel--b"></div>
-      <div class="reel reel--c"></div>
-    </div>
-    <div class="loader__line">
-      <p class="loader__big"></p>
-      <p class="loader__hand"></p>
-    </div>
-    <div class="loader__meta">Abiola Olunrebi<br>Social media, Lagos</div>
-    <div class="loader__count"><span>0</span>%</div>
-  </div>
-
-  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dlg-title">
-    <div class="dialog__bg"></div>
-    <form class="dialog__card" autocomplete="off">
-      <span class="label label--star">Quick one</span>
-      <h2 id="dlg-title">What should we call you?</h2>
-      <p>Just your first name. It lands in the greeting.</p>
-      <div class="dialog__field">
-        <label class="sr-only" for="dlg-name">First name</label>
-        <input id="dlg-name" maxlength="24" placeholder="First name" autocapitalize="words" spellcheck="false">
+    <div class="loader" aria-hidden="true">
+      <div class="loader__bg crumple"></div>
+      <svg
+        class="loader__trail"
+        viewBox="0 0 1440 900"
+        preserveAspectRatio="none"
+      >
+        <path d="M-40 520 C 180 180, 420 760, 680 340 S 1100 140, 1500 480" />
+      </svg>
+      <svg class="loader__plane" viewBox="0 0 60 40">
+        <path d="M2 21 L58 3 L33 37 L27 25 Z" />
+        <path d="M27 25 L58 3 M27 25 L22 33 L33 37" />
+      </svg>
+      <button class="loader__skip" type="button">Skip</button>
+      <div class="loader__frame">
+        <div class="reel reel--a"></div>
+        <div class="reel reel--b"></div>
+        <div class="reel reel--c"></div>
       </div>
-      <p class="dialog__err" aria-live="polite"></p>
-      <div class="dialog__actions">
-        <button class="btn btn--line" type="button" data-skip>Skip</button>
-        <button class="btn" type="submit">Continue</button>
+      <div class="loader__line">
+        <p class="loader__big"></p>
+        <p class="loader__hand"></p>
       </div>
-    </form>
-  </div>
+      <div class="loader__meta">Abiola Olunrebi<br />Social media, Lagos</div>
+      <div class="loader__count"><span>0</span>%</div>
+    </div>
 
-  <header class="hd">
-    <div class="hd__pill">
-      <a class="logo" href="/">abiola<svg viewBox="0 0 24 24"><path d="M12 2.5c.3 3.4 1.4 7.6 9 9.4-7.4 1.4-8.6 5.8-9 9.6-.5-3.9-1.9-8.3-9.2-9.5C10.3 10.4 11.6 6 12 2.5z"/></svg></a>
-      <div class="hd__right">
-        <div class="hd__menuwrap">
-          <button class="hd__menu" type="button" aria-expanded="false" aria-controls="sheet">Menu <span class="burger"><i></i><i></i></span></button>
-          <div class="sheet" id="sheet">
-            <nav class="sheet__nav">
-              <a href="/"><span class="n">01</span><span class="t">Home</span><span class="d">start here</span></a>
-              <a href="/work/"><span class="n">02</span><span class="t">Work</span><span class="d">the good stuff</span></a>
-              <a href="/about/"><span class="n">03</span><span class="t">About</span><span class="d">the backstory</span></a>
-              <a href="/journal/"><span class="n">04</span><span class="t">Journal</span><span class="d">notes</span></a>
-            </nav>
-            <div class="sheet__mood">
-              <span class="label">Pick a mood</span>
-              <div class="mood">
-                <button type="button" data-mood="main" class="is-on"><i style="background:#eba8da"></i>Main<small>pink paper</small></button>
-                <button type="button" data-mood="soft"><i style="background:#b7c3ff"></i>Soft<small>calm blues</small></button>
-                <button type="button" data-mood="hr"><i style="background:#1b1b1b"></i>Quiet<small>ink on paper</small></button>
+    <div
+      class="dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="dlg-title"
+    >
+      <div class="dialog__bg"></div>
+      <form class="dialog__card" autocomplete="off">
+        <span class="label label--star">Quick one</span>
+        <h2 id="dlg-title">What should we call you?</h2>
+        <p>Just your first name. It opens the first line.</p>
+        <div class="dialog__field">
+          <label class="sr-only" for="dlg-name">First name</label>
+          <input
+            id="dlg-name"
+            maxlength="24"
+            placeholder="First name"
+            autocapitalize="words"
+            spellcheck="false"
+          />
+        </div>
+        <p class="dialog__err" aria-live="polite"></p>
+        <div class="dialog__actions">
+          <button class="btn btn--line" type="button" data-skip>Skip</button>
+          <button class="btn" type="submit">Continue</button>
+        </div>
+      </form>
+    </div>
+
+    <header class="hd">
+      <div class="hd__pill">
+        <a class="logo" href="/"
+          >abiola<svg viewBox="0 0 24 24">
+            <path
+              d="M12 2.5c.3 3.4 1.4 7.6 9 9.4-7.4 1.4-8.6 5.8-9 9.6-.5-3.9-1.9-8.3-9.2-9.5C10.3 10.4 11.6 6 12 2.5z"
+            /></svg
+        ></a>
+        <div class="hd__right">
+          <div class="hd__menuwrap">
+            <button
+              class="hd__menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="sheet"
+            >
+              Menu <span class="burger"><i></i><i></i></span>
+            </button>
+            <div class="sheet" id="sheet">
+              <nav class="sheet__nav">
+                <a href="/"
+                  ><span class="n">01</span><span class="t">Home</span
+                  ><span class="d">start here</span></a
+                >
+                <a href="/work/"
+                  ><span class="n">02</span><span class="t">Work</span
+                  ><span class="d">the good stuff</span></a
+                >
+                <a href="/about/"
+                  ><span class="n">03</span><span class="t">About</span
+                  ><span class="d">the backstory</span></a
+                >
+                <a href="/journal/"
+                  ><span class="n">04</span><span class="t">Journal</span
+                  ><span class="d">notes</span></a
+                >
+              </nav>
+              <div class="sheet__mood">
+                <span class="label">Pick a vibe</span>
+                <div class="mood">
+                  <button type="button" data-mood="main" class="is-on">
+                    <i style="background: #f0b7c8"></i>Office girly<small>the desk</small>
+                  </button>
+                  <button type="button" data-mood="soft">
+                    <i style="background: #ffd15c"></i>Content creator<small>the cut</small>
+                  </button>
+                  <button type="button" data-mood="hr">
+                    <i style="background: #1c1c1c"></i>HR / Admin<small>the file</small>
+                  </button>
+                </div>
+                <a
+                  class="sheet__dev"
+                  href="https://wa.me/2349069991722"
+                  target="_blank"
+                  rel="noopener"
+                  >Meet the dev :)</a
+                >
               </div>
             </div>
           </div>
+          <button class="hd__viz" type="button" aria-label="What is playing">
+            <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
         </div>
-        <button class="hd__viz" type="button" aria-label="What is playing">
-          <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
-        </button>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main id="top">
-    <section class="hA">
-      <h1 class="sr-only">Abiola Olunrebi, social media and content professional in Lagos, Nigeria</h1>
-      <div class="hA__name" data-name="ABIOLA" aria-hidden="true"></div>
+    <main id="top">
+      <section class="hA">
+        <h1 class="sr-only">
+          Abiola Olunrebi, social media and content professional in Lagos,
+          Nigeria
+        </h1>
+        <div class="hA__name" data-name="ABIOLA" aria-hidden="true"></div>
 
-      <div class="hA__mid">
-        <div class="hA__intro">
-          <span class="hand">hi <span data-name>there</span>,</span>
-          <p><b>I turn brand goals into posts people finish.</b> Social media, captions, and short-form video for lifestyle and education brands in Lagos.</p>
-          <div class="hA__ctas">
-            <a class="btn" href="/work/">See the work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn--line" href="mailto:olunrebiabiola123@gmail.com">Say hi</a>
+        <div class="hA__mid">
+          <div class="hA__intro">
+            <p class="hA__line hand"><span data-name>You</span><span data-vibe-line>, the desk is handled.</span></p>
+            <p>
+              <b>I turn brand goals into posts people finish.</b> Social media,
+              captions, and short-form video for lifestyle and education brands
+              in Lagos.
+            </p>
+            <div class="hA__ctas">
+              <a class="btn" href="/work/"
+                >See the work
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" /></svg
+              ></a>
+              <a class="btn btn--line" href="mailto:olunrebiabiola123@gmail.com"
+                >Say hi</a
+              >
+            </div>
+            <nav class="socials" aria-label="Social">
+              <a
+                href="https://www.linkedin.com/in/abiola-olunrebi-156670241/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4.7 3.4a2.2 2.2 0 1 0 .1 4.4 2.2 2.2 0 0 0-.1-4.4zM3 9h3.4v12H3zm7 0h3.3v1.6h.1c.5-.9 1.6-1.8 3.3-1.8 3.5 0 4.2 2.3 4.2 5.3V21H17.5v-5.3c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21H10z"
+                  /></svg
+              ></a>
+              <a
+                href="https://x.com/olunrebia61802"
+                target="_blank"
+                rel="noopener"
+                aria-label="X"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M14.7 10.3 22.4 2h-1.8l-6.7 7.2L8.6 2H2l8.1 11.1L2 22h1.8l7.1-7.6L15.4 22H22zm-2.5 2.7-.8-1.1L4.5 3.3h2.8l5.2 7 .8 1.1 6.8 9.2h-2.8z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.instagram.com/abiola_olunrebi/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm8 1.8H8A3.2 3.2 0 0 0 4.8 8v8A3.2 3.2 0 0 0 8 19.2h8A3.2 3.2 0 0 0 19.2 16V8A3.2 3.2 0 0 0 16 4.8zM12 8.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 1.6A2.2 2.2 0 1 0 14.2 12 2.2 2.2 0 0 0 12 9.8zm4.4-2.9a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.tiktok.com/@ade_olunrebi"
+                target="_blank"
+                rel="noopener"
+                aria-label="TikTok"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M14.5 3c.4 2.4 1.8 4.1 4.1 4.5v2.4a5.2 5.2 0 0 1-4-1.2v6.6a6.3 6.3 0 1 1-6.3-6.3c.3 0 .7 0 1 .1v2.6a3.8 3.8 0 1 0 2.7 3.6V3z"
+                  /></svg
+              ></a>
+            </nav>
           </div>
-          <nav class="socials" aria-label="Social">
-            <a href="https://www.linkedin.com/in/abiola-olunrebi-156670241/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.7 3.4a2.2 2.2 0 1 0 .1 4.4 2.2 2.2 0 0 0-.1-4.4zM3 9h3.4v12H3zm7 0h3.3v1.6h.1c.5-.9 1.6-1.8 3.3-1.8 3.5 0 4.2 2.3 4.2 5.3V21H17.5v-5.3c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21H10z"/></svg></a>
-            <a href="https://x.com/olunrebia61802" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 10.3 22.4 2h-1.8l-6.7 7.2L8.6 2H2l8.1 11.1L2 22h1.8l7.1-7.6L15.4 22H22zm-2.5 2.7-.8-1.1L4.5 3.3h2.8l5.2 7 .8 1.1 6.8 9.2h-2.8z"/></svg></a>
-            <a href="https://www.instagram.com/abiola_olunrebi/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm8 1.8H8A3.2 3.2 0 0 0 4.8 8v8A3.2 3.2 0 0 0 8 19.2h8A3.2 3.2 0 0 0 19.2 16V8A3.2 3.2 0 0 0 16 4.8zM12 8.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 1.6A2.2 2.2 0 1 0 14.2 12 2.2 2.2 0 0 0 12 9.8zm4.4-2.9a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9z"/></svg></a>
-            <a href="https://www.tiktok.com/@ade_olunrebi" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 3c.4 2.4 1.8 4.1 4.1 4.5v2.4a5.2 5.2 0 0 1-4-1.2v6.6a6.3 6.3 0 1 1-6.3-6.3c.3 0 .7 0 1 .1v2.6a3.8 3.8 0 1 0 2.7 3.6V3z"/></svg></a>
-          </nav>
+
+          <div class="hA__cut">
+            <img src="/assets/img/abiola-sticker.png" alt="Abiola Olunrebi">
+          </div>
+
+          <div class="hA__side">
+            <a class="hA__clip" href="/work/">
+              <img src="/assets/img/abiola-zigzag.jpg" alt="" />
+              <span>On set</span>
+            </a>
+            <div class="hA__now">
+              <span class="deck"
+                ><span class="vinyl"><span class="vinyl__label"></span></span
+              ></span>
+              <span
+                ><small>Based in</small><b>Lagos, Nigeria</b
+                ><span>Social & content</span></span
+              >
+            </div>
+          </div>
         </div>
 
-        <div class="hA__cut">
-          <img src="/assets/img/abiola-glasses.jpg" alt="Abiola Olunrebi">
-        </div>
-
-        <div class="hA__side">
-          <a class="hA__clip" href="/work/">
-            <img src="/assets/img/abiola-zigzag.jpg" alt="">
-            <span>On set</span>
+        <nav class="doors" aria-label="Explore">
+          <a class="door" href="/work/">
+            <span class="door__pic door__pic--cut"
+              ><img src="/assets/img/abiola-maroon.jpg" alt=""
+            /></span>
+            <span class="door__txt"
+              ><small>Posts and edits</small><b>Work</b></span
+            >
+            <span class="door__go"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></span>
           </a>
-          <div class="hA__now">
-            <span class="deck"><span class="vinyl"><span class="vinyl__label"></span></span></span>
-            <span><small>Based in</small><b>Lagos, Nigeria</b><span>Social & content</span></span>
-          </div>
-        </div>
-      </div>
+          <a class="door" href="/about/">
+            <span class="door__pic"
+              ><img src="/assets/img/abiola-formal.jpg" alt=""
+            /></span>
+            <span class="door__txt"
+              ><small>Story and CV</small><b>About</b></span
+            >
+            <span class="door__go"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></span>
+          </a>
+          <a class="door" href="/journal/">
+            <span class="door__pic"
+              ><img src="/assets/img/abiola-selfie.jpg" alt=""
+            /></span>
+            <span class="door__txt"><small>Notes</small><b>Journal</b></span>
+            <span class="door__go"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></span>
+          </a>
+        </nav>
+      </section>
+    </main>
 
-      <nav class="doors" aria-label="Explore">
-        <a class="door" href="/work/">
-          <span class="door__pic door__pic--cut"><img src="/assets/img/abiola-maroon.jpg" alt=""></span>
-          <span class="door__txt"><small>Posts and edits</small><b>Work</b></span>
-          <span class="door__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-        <a class="door" href="/about/">
-          <span class="door__pic"><img src="/assets/img/abiola-formal.jpg" alt=""></span>
-          <span class="door__txt"><small>Story and CV</small><b>About</b></span>
-          <span class="door__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-        <a class="door" href="/journal/">
-          <span class="door__pic"><img src="/assets/img/abiola-selfie.jpg" alt=""></span>
-          <span class="door__txt"><small>Notes</small><b>Journal</b></span>
-          <span class="door__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-      </nav>
-    </section>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathPlugin.min.js"></script>
-  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-  <script src="/js/site.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="/js/site.js"></script>
+  </body>
 </html>

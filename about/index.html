@@ -1,164 +1,406 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>About — Abiola Olunrebi</title>
-  <meta name="theme-color" content="#eba8da">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,700;1,9..144,560&family=Outfit:wght@400;600;700&display=swap">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/css/site.css">
-  <script>try{document.documentElement.dataset.theme=localStorage.getItem("oe-theme")||"main"}catch(e){}</script>
-</head>
-<body data-page="about">
-  <div class="paper" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>About — Abiola Olunrebi</title>
+    <meta name="theme-color" content="#eba8da" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,700;1,9..144,560&family=Outfit:wght@400;600;700&display=swap"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("oe-theme") || "main";
+      } catch (e) {}
+    </script>
+  </head>
+  <body data-page="about">
+    <div class="paper" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
 
-  <header class="hd">
-    <div class="hd__pill">
-      <a class="logo" href="/">abiola<svg viewBox="0 0 24 24"><path d="M12 2.5c.3 3.4 1.4 7.6 9 9.4-7.4 1.4-8.6 5.8-9 9.6-.5-3.9-1.9-8.3-9.2-9.5C10.3 10.4 11.6 6 12 2.5z"/></svg></a>
-      <div class="hd__right">
-        <div class="hd__menuwrap">
-          <button class="hd__menu" type="button" aria-expanded="false" aria-controls="sheet">Menu <span class="burger"><i></i><i></i></span></button>
-          <div class="sheet" id="sheet">
-            <nav class="sheet__nav">
-              <a href="/"><span class="n">01</span><span class="t">Home</span><span class="d">start here</span></a>
-              <a href="/work/"><span class="n">02</span><span class="t">Work</span><span class="d">the good stuff</span></a>
-              <a href="/about/"><span class="n">03</span><span class="t">About</span><span class="d">the backstory</span></a>
-              <a href="/journal/"><span class="n">04</span><span class="t">Journal</span><span class="d">notes</span></a>
-            </nav>
-            <div class="sheet__mood">
-              <span class="label">Pick a mood</span>
-              <div class="mood">
-                <button type="button" data-mood="main" class="is-on"><i style="background:#eba8da"></i>Main<small>pink paper</small></button>
-                <button type="button" data-mood="soft"><i style="background:#b7c3ff"></i>Soft<small>calm blues</small></button>
-                <button type="button" data-mood="hr"><i style="background:#1b1b1b"></i>Quiet<small>ink on paper</small></button>
+    <header class="hd">
+      <div class="hd__pill">
+        <a class="logo" href="/"
+          >abiola<svg viewBox="0 0 24 24">
+            <path
+              d="M12 2.5c.3 3.4 1.4 7.6 9 9.4-7.4 1.4-8.6 5.8-9 9.6-.5-3.9-1.9-8.3-9.2-9.5C10.3 10.4 11.6 6 12 2.5z"
+            /></svg
+        ></a>
+        <div class="hd__right">
+          <div class="hd__menuwrap">
+            <button
+              class="hd__menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="sheet"
+            >
+              Menu <span class="burger"><i></i><i></i></span>
+            </button>
+            <div class="sheet" id="sheet">
+              <nav class="sheet__nav">
+                <a href="/"
+                  ><span class="n">01</span><span class="t">Home</span
+                  ><span class="d">start here</span></a
+                >
+                <a href="/work/"
+                  ><span class="n">02</span><span class="t">Work</span
+                  ><span class="d">the good stuff</span></a
+                >
+                <a href="/about/"
+                  ><span class="n">03</span><span class="t">About</span
+                  ><span class="d">the backstory</span></a
+                >
+                <a href="/journal/"
+                  ><span class="n">04</span><span class="t">Journal</span
+                  ><span class="d">notes</span></a
+                >
+              </nav>
+              <div class="sheet__mood">
+                <span class="label">Pick a vibe</span>
+                <div class="mood">
+                  <button type="button" data-mood="main" class="is-on">
+                    <i style="background: #f0b7c8"></i>Office girly<small>the desk</small>
+                  </button>
+                  <button type="button" data-mood="soft">
+                    <i style="background: #ffd15c"></i>Content creator<small>the cut</small>
+                  </button>
+                  <button type="button" data-mood="hr">
+                    <i style="background: #1c1c1c"></i>HR / Admin<small>the file</small>
+                  </button>
+                </div>
+                <a class="sheet__dev" href="https://wa.me/2349069991722" target="_blank" rel="noopener">Meet the dev :)</a>
               </div>
             </div>
           </div>
-        </div>
-        <button class="hd__viz" type="button" aria-label="What is playing">
-          <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main class="page">
-    <section class="hero about-hero">
-      <div>
-        <span class="label label--star">About</span>
-        <h1 class="h-lg" data-reveal>Abiola Olunrebi, <em>content first.</em></h1>
-        <p class="lede" data-reveal>Creative, organised, and already doing the work. I manage social for lifestyle and education brands, write the copy, and cut short-form video in CapCut, Canva, and Adobe. Looking for an NYSC placement in social media, content, or communications.</p>
-        <div class="hA__ctas">
-          <a class="btn" href="/work/">See the work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="btn btn--line" href="https://www.linkedin.com/in/abiola-olunrebi-156670241/" target="_blank" rel="noopener">LinkedIn</a>
+          <button class="hd__viz" type="button" aria-label="What is playing">
+            <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
         </div>
       </div>
-      <img src="/assets/img/abiola-formal.jpg" alt="Abiola Olunrebi in a patterned dress">
-    </section>
+    </header>
 
-    <section class="block">
-      <span class="label label--star">What I do</span>
-      <h2 class="h-lg" data-reveal>From brief to <em>the post.</em></h2>
-      <div class="cards">
-        <article data-reveal><b>01</b><h3>Manage</h3><p>Social for lifestyle and education brands. Community, calendars, and a voice that stays consistent.</p></article>
-        <article data-reveal><b>02</b><h3>Write</h3><p>Captions, headlines, and short ad copy. Clear enough to read, specific enough to inquire.</p></article>
-        <article data-reveal><b>03</b><h3>Edit</h3><p>Short-form video and carousels in CapCut, Canva, and Adobe Photoshop, Express, and Premiere.</p></article>
-        <article class="crumple" data-reveal><b>04</b><h3>Plan</h3><p>Content strategy shaped by platform trends and how the algorithm actually surfaces a post.</p></article>
-      </div>
-      <div class="chips" data-reveal>
-        <span>Social media management</span>
-        <span>Content strategy</span>
-        <span>Brand storytelling</span>
-        <span>Copywriting</span>
-        <span>Short-form video</span>
-        <span>Caption & ad copy</span>
-        <span>Community</span>
-        <span>Content calendars</span>
-        <span>CapCut</span>
-        <span>Canva</span>
-        <span>Adobe</span>
-        <span>Meta Business Suite</span>
-        <span>Instagram</span>
-        <span>TikTok</span>
-      </div>
-    </section>
+    <main class="page">
+      <section class="hero about-hero">
+        <div>
+          <span class="label label--star">About</span>
+          <h1 class="h-lg" data-reveal>
+            Abiola Olunrebi, <em>content first.</em>
+          </h1>
+          <p class="lede" data-reveal>
+            Creative, organised, and already doing the work. I manage social for
+            lifestyle and education brands, write the copy, and cut short-form
+            video in CapCut, Canva, and Adobe.
+          </p>
+          <div class="hA__ctas">
+            <a class="btn" href="/work/"
+              >See the work
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></a>
+            <a
+              class="btn btn--line"
+              href="https://www.linkedin.com/in/abiola-olunrebi-156670241/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        <img
+          src="/assets/img/abiola-formal.jpg"
+          alt="Abiola Olunrebi in a patterned dress"
+        />
+      </section>
 
-    <section class="block">
-      <span class="label label--star">Work history</span>
-      <h2 class="h-lg" data-reveal>Where I have been.</h2>
-      <div class="jobs">
-        <div class="tl__line" aria-hidden="true"><i></i></div>
-        <article class="job" data-reveal>
-          <span class="job__dot"></span>
-          <div class="job__card"><small>Current</small><h3>Work Men and Talent · SMM & Admin Officer</h3><p>Current position. Social media for the brand, plus the admin that keeps scheduling, follow-ups, and the day in order.</p></div>
-        </article>
-        <article class="job" data-reveal>
-          <span class="job__dot"></span>
-          <div class="job__card"><small>Current</small><h3>Ripmark · Social Media Manager</h3><p>Current position. Social for digital screens: content planned so it still reads when it is not on a phone.</p></div>
-        </article>
-        <article class="job" data-reveal>
-          <span class="job__dot"></span>
-          <div class="job__card"><small>Oct 2022 — Present · Lagos</small><h3>BT homeDecor · Social Media Manager</h3><p>Social for a luxury interior and lifestyle brand. Storytelling, short-form edits, and captions that point people toward an inquiry.</p></div>
-        </article>
-        <article class="job" data-reveal>
-          <span class="job__dot"></span>
-          <div class="job__card"><small>Jul 2025 — Feb 2026 · Lagos</small><h3>Fushure Africa · Social Media Manager & Copywriter</h3><p>Education content end to end. Weekly and monthly calendars around launches, plus carousels, scripts, threads, and short video.</p></div>
-        </article>
-        <article class="job" data-reveal>
-          <span class="job__dot"></span>
-          <div class="job__card"><small>Jul 2025 — Aug 2025 · Lagos</small><h3>Lemionis · Executive Assistant</h3><p>Kept the CEO’s calendar, meetings, and follow-ups moving so the day’s priorities stayed in order.</p></div>
-        </article>
-        <article class="job" data-reveal>
-          <span class="job__dot"></span>
-          <div class="job__card"><small>May 2025 — Jun 2025 · Lagos</small><h3>Copywriting Intern</h3><p>On-brand posts, campaign captions, and short ads. Brainstorms, draft edits, and a look at likes, clicks, and comments before the next line.</p></div>
-        </article>
-        <article class="job" data-reveal>
-          <span class="job__dot"></span>
-          <div class="job__card"><small>Apr 2025 — May 2025 · Lagos</small><h3>Remoteworkher · Content Creation Specialist</h3><p>Blog and social for brand awareness. Caption work and visual storytelling grew Instagram engagement by 25%.</p></div>
-        </article>
-        <article class="job" data-reveal>
-          <span class="job__dot"></span>
-          <div class="job__card"><small>2022 — 2023 · LASU</small><h3>Financial Secretary, Student Leadership Club</h3><p>Budgeting and reporting for the club, plus event promotion that helped lift attendance by 35%.</p></div>
-        </article>
-      </div>
-    </section>
+      <section class="block">
+        <span class="label label--star">What I do</span>
+        <h2 class="h-lg" data-reveal>From brief to <em>the post.</em></h2>
+        <div class="cards">
+          <article data-reveal>
+            <b>01</b>
+            <h3>Manage</h3>
+            <p>
+              Social for lifestyle and education brands. Community, calendars,
+              and a voice that stays consistent.
+            </p>
+          </article>
+          <article data-reveal>
+            <b>02</b>
+            <h3>Write</h3>
+            <p>
+              Captions, headlines, and short ad copy. Clear enough to read,
+              specific enough to inquire.
+            </p>
+          </article>
+          <article data-reveal>
+            <b>03</b>
+            <h3>Edit</h3>
+            <p>
+              Short-form video and carousels in CapCut, Canva, and Adobe
+              Photoshop, Express, and Premiere.
+            </p>
+          </article>
+          <article class="crumple" data-reveal>
+            <b>04</b>
+            <h3>Plan</h3>
+            <p>
+              Content strategy shaped by platform trends and how the algorithm
+              actually surfaces a post.
+            </p>
+          </article>
+        </div>
+        <div class="chips" data-reveal>
+          <span>Social media management</span>
+          <span>Content strategy</span>
+          <span>Brand storytelling</span>
+          <span>Copywriting</span>
+          <span>Short-form video</span>
+          <span>Caption & ad copy</span>
+          <span>Community</span>
+          <span>Content calendars</span>
+          <span>CapCut</span>
+          <span>Canva</span>
+          <span>Adobe</span>
+          <span>Meta Business Suite</span>
+          <span>Instagram</span>
+          <span>TikTok</span>
+        </div>
+      </section>
 
-    <section class="block">
-      <span class="label label--star">Study</span>
-      <h2 class="h-lg" data-reveal>School and <em>training.</em></h2>
-      <div class="cards">
-        <article data-reveal><b>BA</b><h3>Lagos State University</h3><p>Bachelor of Arts, Lagos, Nigeria.</p></article>
-        <article data-reveal><b>2025</b><h3>Copywriting, Fushure Africa</h3><p>SEO writing, brand voice, and persuasive ad copy.</p></article>
-        <article class="crumple" data-reveal><b>2025</b><h3>Digital Marketing, Coursera</h3><p>Content marketing, email, and analytics.</p></article>
-      </div>
-    </section>
+      <section class="block">
+        <span class="label label--star">Work history</span>
+        <h2 class="h-lg" data-reveal>Where I have been.</h2>
+        <div class="jobs">
+          <div class="tl__line" aria-hidden="true"><i></i></div>
+          <article class="job" data-reveal>
+            <span class="job__dot"></span>
+            <div class="job__card">
+              <small>Current</small>
+              <h3>Work Men and Talent · SMM & Admin Officer</h3>
+              <p>
+                Current position. Social media for the brand, plus the admin
+                that keeps scheduling, follow-ups, and the day in order.
+              </p>
+            </div>
+          </article>
+          <article class="job" data-reveal>
+            <span class="job__dot"></span>
+            <div class="job__card">
+              <small>Current</small>
+              <h3>Ripmark · Social Media Manager</h3>
+              <p>
+                Current position. Social for digital screens: content planned so
+                it still reads when it is not on a phone.
+              </p>
+            </div>
+          </article>
+          <article class="job" data-reveal>
+            <span class="job__dot"></span>
+            <div class="job__card">
+              <small>Oct 2022 — Present · Lagos</small>
+              <h3>BT homeDecor · Social Media Manager</h3>
+              <p>
+                Social for a luxury interior and lifestyle brand. Storytelling,
+                short-form edits, and captions that point people toward an
+                inquiry.
+              </p>
+            </div>
+          </article>
+          <article class="job" data-reveal>
+            <span class="job__dot"></span>
+            <div class="job__card">
+              <small>Jul 2025 — Feb 2026 · Lagos</small>
+              <h3>Fushure Africa · Social Media Manager & Copywriter</h3>
+              <p>
+                Education content end to end. Weekly and monthly calendars
+                around launches, plus carousels, scripts, threads, and short
+                video.
+              </p>
+            </div>
+          </article>
+          <article class="job" data-reveal>
+            <span class="job__dot"></span>
+            <div class="job__card">
+              <small>Jul 2025 — Aug 2025 · Lagos</small>
+              <h3>Lemionis · Executive Assistant</h3>
+              <p>
+                Kept the CEO’s calendar, meetings, and follow-ups moving so the
+                day’s priorities stayed in order.
+              </p>
+            </div>
+          </article>
+          <article class="job" data-reveal>
+            <span class="job__dot"></span>
+            <div class="job__card">
+              <small>May 2025 — Jun 2025 · Lagos</small>
+              <h3>Copywriting Intern</h3>
+              <p>
+                On-brand posts, campaign captions, and short ads. Brainstorms,
+                draft edits, and a look at likes, clicks, and comments before
+                the next line.
+              </p>
+            </div>
+          </article>
+          <article class="job" data-reveal>
+            <span class="job__dot"></span>
+            <div class="job__card">
+              <small>Apr 2025 — May 2025 · Lagos</small>
+              <h3>Remoteworkher · Content Creation Specialist</h3>
+              <p>
+                Blog and social for brand awareness. Caption work and visual
+                storytelling grew Instagram engagement by 25%.
+              </p>
+            </div>
+          </article>
+          <article class="job" data-reveal>
+            <span class="job__dot"></span>
+            <div class="job__card">
+              <small>2022 — 2023 · LASU</small>
+              <h3>Financial Secretary, Student Leadership Club</h3>
+              <p>
+                Budgeting and reporting for the club, plus event promotion that
+                helped lift attendance by 35%.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <section class="sfoot crumple">
-      <span class="label label--star">Contact</span>
-      <h2 class="h-lg">Lagos, Nigeria.</h2>
-      <p class="lede">Portfolio of posts, captions, carousels, and short-form edits on request. References on request.</p>
-      <div class="sfoot__links">
-        <a href="mailto:olunrebiabiola123@gmail.com">olunrebiabiola123@gmail.com</a>
-        <a href="tel:+2348129993614">+234 812 999 3614</a>
-        <a href="/work/">Work</a>
-        <a href="/journal/">Journal</a>
-      </div>
-      <nav class="socials" aria-label="Social">
-        <a href="https://www.linkedin.com/in/abiola-olunrebi-156670241/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.7 3.4a2.2 2.2 0 1 0 .1 4.4 2.2 2.2 0 0 0-.1-4.4zM3 9h3.4v12H3zm7 0h3.3v1.6h.1c.5-.9 1.6-1.8 3.3-1.8 3.5 0 4.2 2.3 4.2 5.3V21H17.5v-5.3c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21H10z"/></svg></a>
-        <a href="https://x.com/olunrebia61802" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 10.3 22.4 2h-1.8l-6.7 7.2L8.6 2H2l8.1 11.1L2 22h1.8l7.1-7.6L15.4 22H22zm-2.5 2.7-.8-1.1L4.5 3.3h2.8l5.2 7 .8 1.1 6.8 9.2h-2.8z"/></svg></a>
-        <a href="https://www.instagram.com/abiola_olunrebi/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm8 1.8H8A3.2 3.2 0 0 0 4.8 8v8A3.2 3.2 0 0 0 8 19.2h8A3.2 3.2 0 0 0 19.2 16V8A3.2 3.2 0 0 0 16 4.8zM12 8.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 1.6A2.2 2.2 0 1 0 14.2 12 2.2 2.2 0 0 0 12 9.8zm4.4-2.9a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9z"/></svg></a>
-        <a href="https://www.tiktok.com/@ade_olunrebi" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 3c.4 2.4 1.8 4.1 4.1 4.5v2.4a5.2 5.2 0 0 1-4-1.2v6.6a6.3 6.3 0 1 1-6.3-6.3c.3 0 .7 0 1 .1v2.6a3.8 3.8 0 1 0 2.7 3.6V3z"/></svg></a>
-      </nav>
-    </section>
-  </main>
+      <section class="block">
+        <span class="label label--star">Study</span>
+        <h2 class="h-lg" data-reveal>School and <em>training.</em></h2>
+        <div class="cards">
+          <article data-reveal>
+            <b>BA</b>
+            <h3>Lagos State University</h3>
+            <p>Bachelor of Arts, Lagos, Nigeria.</p>
+          </article>
+          <article data-reveal>
+            <b>2025</b>
+            <h3>Copywriting, Fushure Africa</h3>
+            <p>SEO writing, brand voice, and persuasive ad copy.</p>
+          </article>
+          <article class="crumple" data-reveal>
+            <b>2025</b>
+            <h3>Digital Marketing, Coursera</h3>
+            <p>Content marketing, email, and analytics.</p>
+          </article>
+        </div>
+      </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-  <script src="/js/site.js"></script>
-</body>
+      <section class="block hire">
+        <header class="hire__title">
+          <span class="label label--star">Hire me</span>
+          <h2 class="h-lg" data-reveal>What I can do <em>for you.</em></h2>
+        </header>
+        <div class="hire__col">
+          <header class="hire__head">
+            <h2>Content creation</h2>
+            <span>07 things</span>
+          </header>
+          <ol>
+            <li><b>Short-form video</b><span>CapCut cuts for the feed, short enough to finish.</span></li>
+            <li><b>Captions and ad copy</b><span>Product lines, headlines, and the sentence that gets the inquiry.</span></li>
+            <li><b>Carousels and threads</b><span>One idea, broken into frames that still sound like the brand.</span></li>
+            <li><b>Scripts</b><span>Spoken lines for short video, written the way people actually talk.</span></li>
+            <li><b>Content calendars</b><span>Weekly and monthly plans around launches and themes.</span></li>
+            <li><b>Visual stills</b><span>Canva and Adobe frames for posts, covers, and campaigns.</span></li>
+            <li><b>Repurposing</b><span>One shoot turned into posts, cuts, and captions for each platform.</span></li>
+          </ol>
+        </div>
+        <div class="hire__col">
+          <header class="hire__head">
+            <h2>Marketing and media</h2>
+            <span>05 things</span>
+          </header>
+          <ol>
+            <li><b>Social media management</b><span>Posting, scheduling, and keeping the page from going quiet.</span></li>
+            <li><b>Content strategy</b><span>Deciding what to post from the brief, the trend, and the algorithm.</span></li>
+            <li><b>Community</b><span>Replies and conversations that keep people on the page.</span></li>
+            <li><b>Brand storytelling</b><span>A voice that stays consistent across décor, education, and campaigns.</span></li>
+            <li><b>Admin support</b><span>Calendars, follow-ups, and the day kept in order.</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="sfoot crumple">
+        <span class="label label--star">Contact</span>
+        <h2 class="h-lg">Lagos, Nigeria.</h2>
+        <p class="lede">
+          Portfolio of posts, captions, carousels, and short-form edits on
+          request. References on request.
+        </p>
+        <div class="sfoot__links">
+          <a href="mailto:olunrebiabiola123@gmail.com"
+            >olunrebiabiola123@gmail.com</a
+          >
+          <a href="tel:+2348129993614">+234 812 999 3614</a>
+          <a href="/work/">Work</a>
+          <a href="/journal/">Journal</a>
+          <a href="/assets/Abiola-Olunrebi-CV.pdf" download>Download CV</a>
+        </div>
+        <nav class="socials" aria-label="Social">
+          <a
+            href="https://www.linkedin.com/in/abiola-olunrebi-156670241/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4.7 3.4a2.2 2.2 0 1 0 .1 4.4 2.2 2.2 0 0 0-.1-4.4zM3 9h3.4v12H3zm7 0h3.3v1.6h.1c.5-.9 1.6-1.8 3.3-1.8 3.5 0 4.2 2.3 4.2 5.3V21H17.5v-5.3c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21H10z"
+              /></svg
+          ></a>
+          <a
+            href="https://x.com/olunrebia61802"
+            target="_blank"
+            rel="noopener"
+            aria-label="X"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M14.7 10.3 22.4 2h-1.8l-6.7 7.2L8.6 2H2l8.1 11.1L2 22h1.8l7.1-7.6L15.4 22H22zm-2.5 2.7-.8-1.1L4.5 3.3h2.8l5.2 7 .8 1.1 6.8 9.2h-2.8z"
+              /></svg
+          ></a>
+          <a
+            href="https://www.instagram.com/abiola_olunrebi/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm8 1.8H8A3.2 3.2 0 0 0 4.8 8v8A3.2 3.2 0 0 0 8 19.2h8A3.2 3.2 0 0 0 19.2 16V8A3.2 3.2 0 0 0 16 4.8zM12 8.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 1.6A2.2 2.2 0 1 0 14.2 12 2.2 2.2 0 0 0 12 9.8zm4.4-2.9a.9.9 0 1 1-.9.9.9.9 0 0 1 .9-.9z"
+              /></svg
+          ></a>
+          <a
+            href="https://www.tiktok.com/@ade_olunrebi"
+            target="_blank"
+            rel="noopener"
+            aria-label="TikTok"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M14.5 3c.4 2.4 1.8 4.1 4.1 4.5v2.4a5.2 5.2 0 0 1-4-1.2v6.6a6.3 6.3 0 1 1-6.3-6.3c.3 0 .7 0 1 .1v2.6a3.8 3.8 0 1 0 2.7 3.6V3z"
+              /></svg
+          ></a>
+        </nav>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="/js/site.js"></script>
+  </body>
 </html>

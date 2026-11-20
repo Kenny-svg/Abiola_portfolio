@@ -54,16 +54,27 @@ $$(".sheet__nav a").forEach(link => {
   link.classList.toggle("is-active", href === page);
 });
 
+const vibeLine = {
+  main: ", the desk is handled.",
+  soft: ", the cut is ready.",
+  hr: ", here are the facts."
+};
+function paintVibe(theme) {
+  const slot = $("[data-vibe-line]");
+  if (slot) slot.textContent = vibeLine[theme] || vibeLine.main;
+}
 try {
   const saved = localStorage.getItem("oe-theme") || "main";
   document.documentElement.dataset.theme = saved;
   $$("[data-mood]").forEach(button => button.classList.toggle("is-on", button.dataset.mood === saved));
+  paintVibe(saved);
 } catch (e) {}
 $$("[data-mood]").forEach(button => {
   button.addEventListener("click", () => {
     document.documentElement.dataset.theme = button.dataset.mood;
     try { localStorage.setItem("oe-theme", button.dataset.mood); } catch (e) {}
     $$("[data-mood]").forEach(other => other.classList.toggle("is-on", other === button));
+    paintVibe(button.dataset.mood);
   });
 });
 
@@ -123,6 +134,59 @@ if (stage && window.ScrollTrigger) {
     onUpdate: self => show(self.progress)
   });
 }
+
+const cards = $$(".wcard");
+if (cards.length && window.ScrollTrigger) {
+  cards.forEach((card, index) => {
+    const next = cards[index + 1];
+    if (!next) return;
+    gsap.to(card, {
+      scale: 0.96,
+      ease: "none",
+      scrollTrigger: {
+        trigger: next,
+        start: "top bottom",
+        end: "top 140px",
+        scrub: true
+      }
+    });
+  });
+}
+const cut = $("[data-cut]");
+if (cut) {
+  const video = $("video", cut);
+  const beats = $$("[data-beat]", cut);
+  const burn = $("[data-burn]", cut);
+  const sync = () => {
+    const time = video.currentTime || 0;
+    let line = burn ? burn.textContent : "";
+    beats.forEach(beat => {
+      const on = time >= Number(beat.dataset.from) && time < Number(beat.dataset.to);
+      beat.classList.toggle("is-on", on);
+      if (on) line = beat.dataset.line;
+    });
+    if (burn && line) burn.textContent = line;
+  };
+  video.addEventListener("timeupdate", sync);
+  video.addEventListener("seeked", sync);
+  const watch = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) video.play().catch(() => {});
+      else video.pause();
+    });
+  }, { threshold: 0.4 });
+  watch.observe(video);
+}
+
+$$(".wcard video").forEach(video => {
+  const watch = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) video.play().catch(() => {});
+      else video.pause();
+    });
+  }, { threshold: 0.5 });
+  watch.observe(video);
+});
 
 const feed = $(".kfeed[data-split]");
 if (feed) {
